@@ -1,11 +1,10 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useDropzone } from 'react-dropzone';
-import { UploadCloud, File, AlertCircle, CheckCircle2, Download, Eye, Loader2, Mail, FileSpreadsheet, Settings } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { UploadCloud, File, CheckCircle2, Download, Loader2, Mail, FileSpreadsheet, Settings } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { Label } from '@/components/ui/label';
 import { batchPredictUpload } from '@/lib/api';
 import { toast } from 'sonner';
 
