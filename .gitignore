@@ -16,5 +16,3 @@ backend/logs/
 .idea/
 .vscode/
 
-backend/artifacts/*.pkl
-backend/artifacts/*.json

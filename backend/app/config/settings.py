@@ -39,7 +39,7 @@ class Settings:
     def __post_init__(self) -> None:
         self.artifacts_dir = self.backend_dir / "artifacts"
         self.logs_dir = self.backend_dir / "logs"
-        self.data_path = self.project_root / "data" / "churn.csv"
+        self.data_path = self.backend_dir / "data" / "churn.csv"
         self.logs_dir.mkdir(parents=True, exist_ok=True)
         self.action_map = self._load_action_map()
         self.smtp_host = os.getenv("SMTP_HOST", "").strip()
